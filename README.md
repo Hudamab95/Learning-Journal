@@ -3,7 +3,7 @@
 
 
 
-![image](images/screenshot.png.png)
+![image](images/screenshot.png)
 
 ## Description
 + This is my learning journal blog which contains my current bootcamp finished main and side projects.
