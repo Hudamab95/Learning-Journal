@@ -1,0 +1,367 @@
+:root {
+    --prussian-blue-2: #082637ff;
+}
+
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--prussian-blue-2);
+    box-sizing: border-box;
+}
+
+/* ----- LINKS ----- */
+ a {
+    text-decoration: none;
+    color: var(--prussian-blue-2);
+    font-weight: 600;
+ } 
+
+/* ----- HOME LAYOUT ----- */
+
+.container {
+    width: 100vw;
+    color: var(--prussian-blue-2);
+}
+
+.site-title{
+    gap: 0.5em;
+}
+
+.fa-code {
+    margin-right: 0.5em;
+}
+
+.title {
+    font-size: 1.2rem;
+    margin-left: 0.7em;
+}
+
+.intro h1  {
+    font-size: 1.5rem;
+}
+
+
+.intro-date {
+    margin-bottom: 0;
+    font-size:  0.9rem; 
+}
+
+.intro-details {  
+    font-size: 0.9rem; 
+}
+
+.intro {
+    position: relative;
+}
+
+.intro img {
+    width: 100%;
+    position: relative;
+}
+
+.intro-text {
+    position: absolute;
+    color: #D3D3D3;
+    bottom: 5%;
+    left: 5%;
+    max-width: 80%;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1em;
+    padding: 1em;
+    margin-top: 1.9rem;
+}
+
+.blog-title {
+    grid-column: 1 / -1;
+    font-size: 1.5rem;
+ }
+
+.card {
+    box-shadow: 0 0 1em rgba(0,0,0,.25);
+    padding: 1em;
+    background: white;
+}
+
+ .card img {
+    max-width: 100%;
+ }
+
+ .card-date {
+    font-size: 0.8rem;
+}
+
+.card-title {
+    font-size: 1rem; 
+    margin-top: 0;
+}
+
+.card-info {
+    font-size: 0.9rem;
+}
+
+ .blog-title, footer {
+    text-align: center;
+ }
+
+ footer {
+    background-color: var(--prussian-blue-2);
+    padding: 0.5em;
+    margin-top: 3rem;
+    color: #D3D3D3;
+    font-size: 0.8rem;
+ }
+
+/* ----- NAVIGATION ----- */
+
+nav a {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.active {
+    border-bottom: 1px solid var(--prussian-blue-2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0.5em;
+    font-size: 0.9rem;
+    
+}
+
+ /* ----- ABOUT ME ----- */
+
+
+.about-intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3.5em;
+}
+
+.about-img  {
+    align-self: center;
+    width: 80%;
+    margin-bottom: 0;
+    padding-top: 2em;
+ }
+
+.about-title  {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.about-details {
+    font-size: 0.9rem;
+}
+
+ .about-info {
+    padding-top: 1em;
+    margin: 0 3.5em;
+    text-align: justify;
+ }
+
+ .about-info-title {
+    font-size: 1.2rem;
+}
+
+.about-info-details {
+    font-size: 0.9rem;
+}
+
+  /* ----- PROJECTS----- */
+
+
+    .side-intro, .solo-intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-img, .solo-img {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+
+    .side-text, .solo-text {
+        margin: 0.5em;
+        padding: 1em;
+    }
+    .side-title, .solo-title {
+        font-size: 1.5rem;
+    }
+    .side-details, .solo-details {
+        font-size: 1rem;
+
+    }
+    .side-info-title, .solo-info-title {
+        font-size: 1.2rem;
+    }
+    .side-info-details, .solo-info-details {
+        font-size: 1rem;
+    }
+
+
+ /* ----------------- PROJECTS MEDIA QUERY----------------- */
+
+@media (min-width: 775px) {
+    
+    /* ----- HOME LAYOUT ----- */
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul li{
+        font-size: 0.9rem;
+        margin-right: 2em;
+        
+    }
+    
+    .site-title{
+        gap: 0.5em;
+    }
+
+    .fa-solid {
+        margin-right: 0.8em;
+    }
+
+    .title {
+        font-size: 1.4rem;
+        margin-left: 0.7em;
+    }
+
+    .intro h1  {
+        font-size: 2rem;
+    }
+
+    .intro-date {
+        margin-bottom: 0;
+    }
+
+    .intro-date, .intro-details, .card-title {  
+        font-size: 1rem; 
+    }
+
+    .blogs {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        margin-top: 2rem;
+    }
+
+    .blog-title {
+        font-size: 1.8rem;
+    }
+    .card-date, .card-info  {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        margin-top: 0;
+    }
+
+
+
+
+ /* ----- ABOUT ME ----- */
+    .about-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-intro {
+        flex-direction: row;
+    }
+
+    .about-img  {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .about-header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .about-title  {
+        font-size: 1.8rem;
+    }
+
+    .about-details {
+        font-size: 1rem;
+    }
+
+    .about-info-title {
+        font-size: 1.8rem;
+    }
+
+    .about-info-details {
+        font-size: 1rem;
+    }
+
+
+  /* ----- PROJECTS----- */
+
+    .side-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .solo-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .side-intro {
+        flex-direction: row;
+        margin: 4em 0;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .solo-img {
+        max-width: 900px;
+    }
+
+    .side-img {
+        max-width: 500px;
+    }
+
+    .side-img, .solo-img {
+        width: 100%;
+    }
+
+    .side-text {
+        max-width: 500px;
+    }
+
+    .side-title, .solo-title {
+        font-size: 1.8rem;
+    }
+    .side-details, .solo-details, 
+    .side-info-title, .solo-info-title {
+        font-size: 1.1rem;
+
+    }
+    .side-info-details, .solo-info-details {
+        font-size: 1rem;
+    }
+
+}
+
+ 
