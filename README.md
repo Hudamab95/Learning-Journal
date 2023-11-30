@@ -6,7 +6,7 @@
 ![image](images/screenshot.png)
 
 ## Description
-+ This is my learning journal blog which contains my current bootcamp finished main and side projects.
++ This is my learning journal blog which contains my current finished main and side projects.
 
 ## What is the specs?
 - Responsive layout: The site will adapt and respond smoothly to different screen sizes, providing an optimal viewing experience on mobile phones, tablets, and desktops.
